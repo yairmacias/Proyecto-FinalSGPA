@@ -1,0 +1,68 @@
+Creación del usiario: create user 'LlaveMaestra'@'localhost' identified by 'batmanelmejordetodos';
+Privilegios:  grant all privileges on SGPA.* to LlaveMaestra@localhost;
+
+
+Create table Docente(ID_Docente int not null, primary key(ID_Docente), Nombre varchar(20), 
+		ApellidoP varchar(20), ApellidoM varchar(20));
+
+Create table Coordiador_Academia(ID_CoordinadorA int not null, primary key(ID_CoordinadorA), Nombre varchar(20),
+		 ApellidoP varchar(20), ApellidoM varchar(20));
+
+Create table Curso(ID_Curso int not null, primary key(ID_Curso), perido int(50), Bloque int(10));
+
+Create table Experiencia_Educativa(NRC int not null, primary key(NRC), Nombre varchar(50), ID_Docente int, 
+		foreign key(ID_Docente) references Docente(ID_Docente));
+
+Create table Academia(ID_Academia int not null, primary key(ID_Academia), Carrera varchar(50), NRC int, 
+		foreign key(NRC) references Experiencia_Educativa(NRC), ID_Docente int, foreign key(ID_Docente) 
+		references Docente(ID_Docente), ID_CoordinadorA int, foreign key(ID_CoordinadorA) 
+		references Coordinador_Academia(ID_CoordinadorA));
+
+Create table PlanDe_Curso(ID_PlandeCurso int not null, primary key(ID_PlandeCurso), ProgramaEducativo varchar(200), 
+		Bloque int(10), Seccion int(10), Academico varchar(100), Periodo int(20), ObjetivoGeneral varchar(250));
+
+Create table Planeacion(Unidad int(10), Temas varchar(250), Fechas date, Tareas_Practicas varchar(200), 
+		Tecnica_Didactica varchar(250), ID_PlandeCurso int, foreign key(ID_PlandeCurso) 
+		references PlanDe_Curso(ID_PlandeCurso));
+
+Create table Calendario_Evaluacion(Unidad int(10), Fechas date, CriterioEvaluacion varchar(200), Instrumento varchar(100), 
+		Porcentaje int(20), ID_PlandeCurso int, foreign key(ID_PlandeCurso) references Plande_Curso(ID_PlandeCurso));
+
+Create table Bibliografia(AutorApellidoNombre varchar(200), Titulo varchar(100), Editorial varchar(100), Año int(20), 
+		ID_PlandeCurso int, foreign key(ID_PlandeCurso) references Plande_Curso(ID_PlandeCurso));
+
+Create table Minuta(ID_Minuta int not null, primary key(ID_Minuta), Carrera varchar(50), Academia varchar(50), Hora time, Periodo int(50), 
+		Fecha date, Lugar varchar(50), ID_CoordinadorA int, foreign key(ID_CoordinadorA) references coordinador_academia(ID_CoordinadorA));
+
+*Create table Temas_Tratar(TemasATratar varchar(300), ID_Minuta int, foreign key(ID_Minuta) references Minuta(ID_Minuta));
+
+*Create table Aspectos_Agenda(NombreParticipante varchar(250), Asunto varchar(200), 
+		ID_Minuta int, foreign key(ID_Minuta) references Minuta(ID_Minuta));
+
+*Create table Conclusiones_Acuerdos(ConclusionesAcuerdos varchar(300), ID_Minuta int, 
+		foreign key(ID_Minuta) references Minuta(ID_Minuta));
+
+*Create table Participantes(Nombre varchar(100), ID_Minuta int, foreign key(ID_Minuta) references Minuta(ID_Minuta));
+
+*Create table Avance_Programatico(ID_AvanceProgramatico int not null,primary key(ID_AvanceProgramatico), NRC int(20), 
+	ExperienciaEducativa varchar(50), ProgramaEducativo varchar(50), Bloque int(20), Seccion int(20), Periodo int(20), 
+	ObjetivoGeneral varchar(200));
+
+* Create table PlaneacionA( Unidad int(20), Temas varchar(250), Fechas date, Tareas_Practicas varchar(200), Tecnica_Didactica varchar(250), 
+		ID_AvanceProgramatico int, foreign key(ID_AvanceProgramatico) references Avance_Programatico(ID_AvanceProgramatico));
+
+*Create table Avance( Unidad int(20), PorcentajeAvance int(20), Observaciones varchar(200), ID_AvanceProgramatico int, 
+		foreign key(ID_AvanceProgramatico) references Avance_Programatico(ID_AvanceProgramatico));
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SELECT * FROM Docente where ID_Docente = ? and Nombre = ?;
+
+"INSERT INTO `sgpa`.`docente`\n" +
+"(`ID_Docente`,\n" +
+"`Nombre`," +"`ApellidoP`," +"`ApellidoM`)" +"VALUES" +"(1," +"1," +"1," +"1)"
+
+"DELETE FROM `sgpa`.`docente`\n" +"WHERE ID_Docente = 1"
+
+
