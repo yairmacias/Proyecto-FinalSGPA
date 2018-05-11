@@ -11,31 +11,31 @@ package Controlador;
  */
 public class CoordinadorAcademia {
 
-    String apellidoPaterno;
-    String apellidoMaterno;
+    String apellidoP;
+    String apellidoM;
     String nombre;
 
-    public String getApellidoPaterno() {
-        return apellidoPaterno;
+    public String getapellidoP() {
+        return apellidoP;
     }
 
-    public void setApellidoPaterno(String apellidoP) {
-        this.apellidoPaterno = apellidoP;
+    public void setapellidoP(String apellidoP) {
+        this.apellidoP = apellidoP;
     }
 
-    public String getApellidoMaterno() {
-        return apellidoMaterno;
+    public String getapellidoM() {
+        return apellidoM;
     }
 
-    public void setApellidoMaterno(String apellidoM) {
-        this.apellidoMaterno = apellidoM;
+    public void setapellidoM(String apellidoM) {
+        this.apellidoM = apellidoM;
     }
 
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setnombre(String nombre) {
         this.nombre = nombre;
     }
 }

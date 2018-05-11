@@ -11,33 +11,33 @@ package Controlador;
  */
 public class Docente {
 
-    String apellidoPaterno;
-    String apellidoMaterno;
+    String apellidoP;
+    String apellidoM;
     String nombre;
 
-    public String getApellidoPaterno() {
-        return apellidoMaterno;
+    public String getapellidoP() {
+        return apellidoM;
     }
 
-    public void setApellidoPaterno(String apellidoPaterno) {
-        this.apellidoMaterno = apellidoPaterno;
+    public void setapellidoP(String apellidoN) {
+        this.apellidoM = apellidoN;
     }
 
-    public String getApellidoMaterno() {
+    public String getapellidoM() {
 
-        return apellidoMaterno;
+        return apellidoM;
     }
 
-    public void setapellidoM(String apellidoPaterno) {
-        this.apellidoMaterno = apellidoPaterno;
+    public void setapellidoM(String apellidoN) {
+        this.apellidoM = apellidoN;
     }
 
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setnombre(String nombreD) {
+        this.nombre = nombreD;
 
     }
 }
