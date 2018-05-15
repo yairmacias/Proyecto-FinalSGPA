@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <PasswordField layoutX="176.0" layoutY="242.0" prefHeight="25.0" prefWidth="242.0" promptText="********" />
+            <TextField layoutX="173.0" layoutY="188.0" prefHeight="25.0" prefWidth="242.0" promptText="Usuario" />
+            <Button layoutX="131.0" layoutY="302.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #48A5EA;" text="Iniciar Sesion" />
+            <Button layoutX="342.0" layoutY="304.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="99.0" style="-fx-background-color: #CD6155;" text="Crear Usuario" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/usuario.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
