@@ -7,7 +7,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="717.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-    
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="377.0" prefWidth="157.0" style="-fx-background-color: #00FF66;">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="121.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/profile-42914_960_720.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="20.0" layoutY="136.0" prefHeight="17.0" prefWidth="117.0" text="Nombre del Docente" />
+            <Button layoutX="25.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #FF0000;" text="Cerrar Sesion" textFill="#f5f3f3" />
+         </children></Pane>
+      <Pane layoutX="157.0" prefHeight="377.0" prefWidth="560.0" style="-fx-background-color: #D0D3D4;">
+         <children>
+            <Button layoutX="43.0" layoutY="62.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Elaborar Avance Programatico" />
+            <Button layoutX="43.0" layoutY="147.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Editar Avance Programatico" />
+            <Button layoutX="43.0" layoutY="232.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Visualizar Avance Programatico" />
+            <Button layoutX="298.0" layoutY="62.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Elaborar Plan de Curso" />
+            <Button layoutX="298.0" layoutY="147.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Editar Plan de Curso" />
+            <Button layoutX="298.0" layoutY="232.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #2ECC71;" text="Visualizar Plan de Curso" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

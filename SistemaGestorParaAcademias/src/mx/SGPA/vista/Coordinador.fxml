@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="377.0" prefWidth="157.0" style="-fx-background-color: #0066FF;">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="121.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Desktop/profile-42914_960_720.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="8.0" layoutY="137.0" prefHeight="17.0" prefWidth="141.0" text="Nombre del Coordinador" />
+            <Button layoutX="25.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #FF0000;" text="Cerrar Sesion" textFill="#f5f3f3" />
+         </children>
+      </Pane>
+      <Pane layoutX="157.0" prefHeight="377.0" prefWidth="560.0" style="-fx-background-color: #D0D3D4;">
+         <children>
+            <Button layoutX="43.0" layoutY="62.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #29B6F6;" text="Elaborar Minuta" />
+            <Button layoutX="43.0" layoutY="147.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: #29B6F6;" text="Editar Minuta" />
+            <ComboBox layoutX="293.0" layoutY="62.0" prefHeight="34.0" prefWidth="183.0" promptText="Visualizar" style="-fx-background-color: #29B6F6;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
