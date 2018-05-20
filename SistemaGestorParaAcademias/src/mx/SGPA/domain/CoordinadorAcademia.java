@@ -1,40 +1,41 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package mx.SGPA.domain;
 
-
+/**
+ *
+ * @author Kevin
+ */
 public class CoordinadorAcademia {
 
-    String apellidoPaterno;
-    String apellidoMaterno;
+    String apellidoP;
+    String apellidoM;
     String nombre;
-    
-    public CoordinadorAcademia(String nombre,String apellidoPaterno , String apellidoMaterno){
-        this.nombre = nombre;
-        this.apellidoPaterno = apellidoPaterno;
-        this.apellidoMaterno = apellidoMaterno;
+
+    public String getapellidoP() {
+        return apellidoP;
     }
 
-    public String getApellidoPaterno() {
-        return apellidoPaterno;
+    public void setapellidoP(String apellidoP) {
+        this.apellidoP = apellidoP;
     }
 
-    public void setApellidoPaterno(String apellidoP) {
-        this.apellidoPaterno = apellidoP;
+    public String getapellidoM() {
+        return apellidoM;
     }
 
-    public String getApellidoMaterno() {
-        return apellidoMaterno;
+    public void setapellidoM(String apellidoM) {
+        this.apellidoM = apellidoM;
     }
 
-    public void setApellidoMaterno(String apellidoM) {
-        this.apellidoMaterno = apellidoM;
-    }
-
-    public String getNombre() {
+    public String getnombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setnombre(String nombre) {
         this.nombre = nombre;
     }
 }

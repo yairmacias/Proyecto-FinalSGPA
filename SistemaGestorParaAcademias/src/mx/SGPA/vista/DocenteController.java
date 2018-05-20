@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author Jasiel
  */
-public class VMainController implements Initializable {
+public class DocenteController implements Initializable {
 
     /**
      * Initializes the controller class.
