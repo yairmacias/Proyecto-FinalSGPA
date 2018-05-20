@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/controlador/AvanceProgramatico.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Curso.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Avance.java</file>
             <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Bibliografia.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/CalendarioEvaluacion.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Participantes.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/AspectoAgenda.java</file>
-            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/PlanCurso.java</file>
+            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/TemasTratar.java</file>
+            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Planeacion.java</file>
         </group>
     </open-files>
 </project-private>
