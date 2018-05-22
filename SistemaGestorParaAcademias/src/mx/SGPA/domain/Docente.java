@@ -1,43 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mx.SGPA.domain;
 
-/**
- *
- * @author Kevin
- */
+
 public class Docente {
 
-    String apellidoP;
-    String apellidoM;
+    String apellidoPaterno;
+    String apellidoMaterno;
     String nombre;
-
-    public String getapellidoP() {
-        return apellidoM;
+    private Usuario usuario;
+    
+    public Docente(String apellidoPaterno, String apellidoMaterno, String nombre, Usuario usuario){
+        this.nombre = nombre;
+        this.apellidoPaterno = apellidoPaterno;
+        this.apellidoMaterno = apellidoMaterno;
+        this.usuario = usuario;
     }
 
-    public void setapellidoP(String apellidoN) {
-        this.apellidoM = apellidoN;
+    public String getApellidoPaterno() {
+        return apellidoMaterno;
     }
 
-    public String getapellidoM() {
-
-        return apellidoM;
+    public void setApellidoPaterno(String apellidoPaterno) {
+        this.apellidoMaterno = apellidoPaterno;
     }
 
-    public void setapellidoM(String apellidoN) {
-        this.apellidoM = apellidoN;
+    public String getApellidoMaterno() {
+
+        return apellidoMaterno;
+    }
+    
+    public Usuario getUsuario(){
+        return usuario;
     }
 
-    public String getnombre() {
+    public void setApellidoMaterno(String apellidoMaterno) {
+        this.apellidoMaterno = apellidoMaterno;
+    }
+
+    public String getNombre() {
         return nombre;
     }
 
-    public void setnombre(String nombreD) {
+    public void setNombre(String nombreD) {
         this.nombre = nombreD;
 
+    }
+    
+    public void setUsuario(Usuario usuario){
+        this.usuario = usuario;
     }
 }
