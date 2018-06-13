@@ -8,6 +8,7 @@ public class Minuta {
     private int hora;
     private int periodo;
     private int fecha;
+    private String lugar;
 
     public Minuta(int idMinuta, String carrera, String academia, int hora, int periodo, int fecha) {
 

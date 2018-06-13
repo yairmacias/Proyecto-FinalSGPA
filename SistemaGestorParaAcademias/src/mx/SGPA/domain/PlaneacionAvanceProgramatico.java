@@ -1,24 +1,22 @@
-
 package mx.SGPA.domain;
 
+public class PlaneacionAvanceProgramatico {
 
-public class Planeacion {
-    
     int unidad;
     String temas;
     int fechas;
     String tareasPracticas;
     String tecnicaDidactica;
-    int idPlanCurso;
-    
-    public Planeacion(int unidad, String temas, int fechas, String tareasPracticas, String tecnicasDidacticas, int idPlanCurso ){
-        
+    int idAvanceProgramatico;
+
+    public PlaneacionAvanceProgramatico(int unidad, String temas, int fechas, String tareasPracticas, String tecnicasDidacticas, int idAvanceProgramatico) {
+
         this.unidad = unidad;
         this.temas = temas;
         this.fechas = fechas;
         this.tareasPracticas = tareasPracticas;
         this.tecnicaDidactica = tecnicasDidacticas;
-        this.idPlanCurso = idPlanCurso;
+        this.idAvanceProgramatico = idAvanceProgramatico;
     }
 
     public int getUnidad() {
@@ -61,13 +59,12 @@ public class Planeacion {
         this.tecnicaDidactica = tecnicaDidactica;
     }
 
-    public int getIdPlanCurso() {
-        return idPlanCurso;
+    public int getIdAvanceProgramatico() {
+        return idAvanceProgramatico;
     }
 
     public void setIdPlanCurso(int idPlanCurso) {
-        this.idPlanCurso = idPlanCurso;
+        this.idAvanceProgramatico = idPlanCurso;
     }
-    
-    
+
 }

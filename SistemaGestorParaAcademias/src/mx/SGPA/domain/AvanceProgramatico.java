@@ -9,6 +9,8 @@ public class AvanceProgramatico {
     private int seccion;
     private int periodo;
     private String objetivoGeneral;
+    private PlaneacionAvanceProgramatico planeacionAvanceProgramatico;
+    private Avance avance;
 
     public AvanceProgramatico(int idAvanceProgramatico, int nrc, String experienciaEducativa, int bloque, int seccion, int periodo, String objetivoGeneral) {
 
@@ -48,6 +50,14 @@ public class AvanceProgramatico {
     public String getObjetivoGeneral() {
         return objetivoGeneral;
     }
+    
+    public PlaneacionAvanceProgramatico getPlaneacionAvanceProgramatico(){
+        return planeacionAvanceProgramatico;
+    }
+    
+    public Avance getAvance(){
+        return avance;
+    }
 
     public void setIdAvanceProgramatico(int idAvanceProgramatico) {
         this.idAvanceProgramatico = idAvanceProgramatico;
@@ -76,5 +86,13 @@ public class AvanceProgramatico {
     public void setObjetivoGeneral(String objetivoGeneral) {
         this.objetivoGeneral = objetivoGeneral;
     }
+    
+    public void setPlaneacionAvancProgramatico(PlaneacionAvanceProgramatico planeacionAvanceProgramatico){
+        this.planeacionAvanceProgramatico = planeacionAvanceProgramatico;
+    }
+    
+   public void setAvance(Avance avance){
+       this.avance = avance;
+   }
 
 }

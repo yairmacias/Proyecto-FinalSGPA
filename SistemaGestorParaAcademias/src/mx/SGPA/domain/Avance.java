@@ -1,31 +1,28 @@
 
 package mx.SGPA.domain;
 
-/**
- *
- * @author Jasiel
- */
+
 public class Avance {
     
-    int unbidad;
+    int unidad;
     int porcentajeAvance;
     String observaciones;
     int idAvanceProgramatico;
     
     public Avance(int unidad, int porcentajeAvance, String observaciones, int idAvanceProgramatico){
          
-        this.unbidad = unidad;
+        this.unidad = unidad;
         this.porcentajeAvance = porcentajeAvance;
         this.observaciones = observaciones;
         this.idAvanceProgramatico = idAvanceProgramatico;
     }
     
     public int getUnbidad() {
-        return unbidad;
+        return unidad;
     }
 
     public void setUnbidad(int unbidad) {
-        this.unbidad = unbidad;
+        this.unidad = unbidad;
     }
 
     public int getPorcentajeAvance() {

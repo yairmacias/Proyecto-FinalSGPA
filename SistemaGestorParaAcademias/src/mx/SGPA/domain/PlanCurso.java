@@ -1,26 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mx.SGPA.domain;
 
-/**
- *
- * @author Jasiel
- */
 public class PlanCurso {
-    
+
     int idPlanCurso;
     String programaEducativo;
     int bloque;
     int seccion;
     String academico;
     int periodo;
-    String objetivoGeneral; 
-    
-    public PlanCurso(int idPlanCurso, String programaEducativo, int bloque, int seccion, String academico, int periodo, String objetivoGeneral){
-        
+    String objetivoGeneral;
+    private Planeacion planeacion;
+    private Bibliografia bibliografia;
+    private CalendarioEvaluacion calendarioEvaluacion;
+
+    public PlanCurso(int idPlanCurso, String programaEducativo, int bloque, int seccion, String academico, int periodo,
+            String objetivoGeneral, Planeacion planeacion, Bibliografia bibliografia, CalendarioEvaluacion calendarioEvaluacion) {
+
         this.idPlanCurso = idPlanCurso;
         this.programaEducativo = programaEducativo;
         this.bloque = bloque;
@@ -28,6 +23,10 @@ public class PlanCurso {
         this.academico = academico;
         this.periodo = periodo;
         this.objetivoGeneral = objetivoGeneral;
+        this.planeacion = planeacion;
+        this.bibliografia = bibliografia;
+        this.calendarioEvaluacion = calendarioEvaluacion;
+
     }
 
     public int getIdPlanCurso() {
@@ -52,6 +51,14 @@ public class PlanCurso {
 
     public void setBloque(int bloque) {
         this.bloque = bloque;
+    }
+
+    public void setPlaneacion(Planeacion planeacion) {
+        this.planeacion = planeacion;
+    }
+
+    public Planeacion getPlaneacion() {
+        return planeacion;
     }
 
     public int getSeccion() {
@@ -85,6 +92,21 @@ public class PlanCurso {
     public void setObjetivoGeneral(String objetivoGeneral) {
         this.objetivoGeneral = objetivoGeneral;
     }
-    
-    
+
+    public void setBibliografia(Bibliografia bibliografia) {
+        this.bibliografia = bibliografia;
+    }
+
+    public Bibliografia getBibliografia() {
+        return bibliografia;
+    }
+
+    public void setCalendarioEvlaucion(CalendarioEvaluacion calendarioEvaluacion) {
+        this.calendarioEvaluacion = calendarioEvaluacion;
+    }
+
+    public CalendarioEvaluacion getCalendarioEvaluacion() {
+        return calendarioEvaluacion;
+    }
+
 }
