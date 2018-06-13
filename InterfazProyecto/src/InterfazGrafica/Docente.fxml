@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="628.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button layoutX="502.0" layoutY="263.0" mnemonicParsing="false" text="Salir">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="231.0" layoutY="263.0" mnemonicParsing="false" text="Vsializar Reporte">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="377.0" layoutY="263.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" text="Eliminar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="78.0" layoutY="263.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" text="Realizar Documentos">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <TextArea layoutX="251.0" layoutY="24.0" prefHeight="200.0" prefWidth="343.0" promptText="Actividad Registrada">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

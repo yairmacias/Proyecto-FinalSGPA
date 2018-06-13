@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1971.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="253.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACULTAD DE ESTADISTICA E INFORMATICA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="365.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGION XALAPA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="204.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMATO: MINUTA DE REUNION DE ACADEMIA (GA-GE-F-01)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Generales">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrera">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="68.0" layoutY="117.0" prefHeight="25.0" prefWidth="171.0" />
+      <Text layoutX="262.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academia">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="338.0" layoutY="117.0" prefHeight="25.0" prefWidth="171.0" />
+      <Text layoutX="529.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinador">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="622.0" layoutY="117.0" prefHeight="25.0" prefWidth="171.0" />
+      <Text layoutX="809.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="848.0" layoutY="116.0" prefHeight="25.0" prefWidth="93.0" />
+      <Text layoutX="14.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="68.0" layoutY="146.0" prefHeight="25.0" prefWidth="171.0" />
+      <Text layoutX="262.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="300.0" layoutY="146.0" prefHeight="25.0" prefWidth="108.0" />
+      <Text layoutX="432.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lugar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="479.0" layoutY="146.0" prefHeight="25.0" prefWidth="406.0" />
+      <Text layoutX="363.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetivos de la Junta">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="21.0" layoutY="219.0" prefHeight="239.0" prefWidth="913.0" />
+      <Text layoutX="383.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temas a Tratar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="23.0" layoutY="485.0" prefHeight="269.0" prefWidth="913.0" />
+      <Text layoutX="348.0" layoutY="782.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temas Adicionales de la Agenda">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1dede" height="64.0" layoutX="22.0" layoutY="786.0" stroke="BLACK" strokeType="INSIDE" width="913.0" />
+      <Text layoutX="51.0" layoutY="823.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Nombre del Partisipante">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="239.0" layoutY="806.0" prefHeight="25.0" prefWidth="303.0" />
+      <Text layoutX="562.0" layoutY="822.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asunto">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="622.0" layoutY="806.0" prefHeight="25.0" prefWidth="303.0" />
+      <Text layoutX="395.0" layoutY="887.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conclusiones y Acuerdos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="23.0" layoutY="891.0" prefHeight="249.0" prefWidth="913.0" />
+      <Text layoutX="174.0" layoutY="1164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asistente">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="22.0" layoutY="1169.0" prefHeight="339.0" prefWidth="399.0" />
+      <Text layoutX="718.0" layoutY="1163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firma">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="529.0" layoutY="1169.0" prefHeight="339.0" prefWidth="399.0" />
+      <Text layoutX="400.0" layoutY="1551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Integrantes que no Asistieron">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="202.0" layoutY="1556.0" prefHeight="283.0" prefWidth="560.0" />
+      <Text layoutX="419.0" layoutY="1895.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Firma del Coordinador">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="365.0" layoutY="1854.0" prefHeight="25.0" prefWidth="303.0" />
+   </children>
+</AnchorPane>

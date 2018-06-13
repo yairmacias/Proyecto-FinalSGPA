@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea layoutX="251.0" layoutY="14.0" prefHeight="200.0" prefWidth="292.0" promptText="Actividades" />
+      <Button layoutX="493.0" layoutY="241.0" mnemonicParsing="false" text="Salir">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="23.0" layoutY="243.0" mnemonicParsing="false" text="Visualizar Documento">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="206.0" layoutY="241.0" mnemonicParsing="false" text="Elaborar Reporte general">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="391.0" layoutY="241.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="81.0" text="Eliminar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
