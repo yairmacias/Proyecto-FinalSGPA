@@ -12,16 +12,16 @@ import mx.SGPA.basededatos.ConexionBaseDeDatos;
 
 public class DocenteDAO {
     
-    private Connection conexionDB;
+    private Connection conexionBD;
     private String consultaSQL;
     private PreparedStatement sentenciaSQL;
     
        public boolean guardarDatosDocente(Docente docente) {
         boolean guardadoRealizado = true;
         consultaSQL = "INSERT INTO cliente () values (?,?,?,?,?,?)";
-        conexionDB = ConexionBaseDeDatos.getDataBaseConnection();
+        conexionBD = ConexionBaseDeDatos.getConexionBaseDeDatos();
         try {
-            sentenciaSQL = conexionDB.prepareStatement(consultaSQL);
+            sentenciaSQL = conexionBD.prepareStatement(consultaSQL);
             sentenciaSQL.setString(1, docente.getNombre());
             sentenciaSQL.setString(2, docente.getApellidoPaterno());
             sentenciaSQL.setString(3, docente.getApellidoMaterno());
@@ -33,7 +33,7 @@ public class DocenteDAO {
             guardadoRealizado = false;
             Logger.getLogger(DocenteDAO.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
-            ConexionBaseDeDatos.closeConnection();
+            ConexionBaseDeDatos.cerrarConexion();
         }
         return guardadoRealizado;
     }

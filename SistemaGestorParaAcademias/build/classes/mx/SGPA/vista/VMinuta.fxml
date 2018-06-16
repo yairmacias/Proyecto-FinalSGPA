@@ -6,6 +6,105 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.SGPA.vista.VMinutaController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="944.0" prefWidth="726.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="mx.SGPA.vista.VMinutaController">
+   <children>
+      <Label layoutX="244.0" layoutY="23.0" text="FACULTAD DE ESTADISTICA E INFORMATICA" />
+      <Label layoutX="319.0" layoutY="40.0" text="REGION XALAPA" />
+      <Label layoutX="213.0" layoutY="57.0" text="Formato: Minuta de Reunion de Academia: (GA-GE-F-01)" />
+      <Separator layoutX="23.0" layoutY="75.0" prefHeight="3.0" prefWidth="680.0" />
+      <Pane layoutX="23.0" layoutY="89.0" prefHeight="252.0" prefWidth="680.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Datos generales de la Junta" />
+            <Label layoutX="14.0" layoutY="39.0" text="Carrera:" />
+            <Label layoutX="14.0" layoutY="71.0" />
+            <Label layoutX="316.0" layoutY="39.0" text="Aacademia:" />
+            <Label layoutX="11.0" layoutY="89.0" text="Coordinador:" />
+            <Label layoutX="377.0" layoutY="89.0" text="Hora:" />
+            <Label layoutX="504.0" layoutY="89.0" text="Periodo:" />
+            <Label layoutX="13.0" layoutY="142.0" text="Fecha:" />
+            <Label layoutX="164.0" layoutY="142.0" text="Lugar:" />
+            <TextField layoutX="55.0" layoutY="35.0" prefHeight="25.0" prefWidth="251.0" />
+            <TextField layoutX="385.0" layoutY="35.0" prefHeight="25.0" prefWidth="238.0" />
+            <TextField layoutX="87.0" layoutY="85.0" prefHeight="25.0" prefWidth="264.0" />
+            <TextField layoutX="405.0" layoutY="85.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField layoutX="548.0" layoutY="85.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField layoutX="55.0" layoutY="138.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField layoutX="207.0" layoutY="138.0" prefHeight="25.0" prefWidth="170.0" />
+            <Label layoutX="13.0" layoutY="185.0" text="Objetivo de la Junta:" />
+            <TextField layoutX="134.0" layoutY="181.0" prefHeight="54.0" prefWidth="492.0" />
+         </children>
+      </Pane>
+      <Separator layoutX="23.0" layoutY="349.0" prefHeight="3.0" prefWidth="680.0" />
+      <Pane layoutX="23.0" layoutY="359.0" prefHeight="110.0" prefWidth="680.0">
+         <children>
+            <Label layoutX="302.0" text="Temas a tratar" />
+            <TextField layoutX="10.0" layoutY="26.0" prefHeight="70.0" prefWidth="660.0" />
+         </children>
+      </Pane>
+      <TabPane layoutX="33.0" layoutY="469.0" prefHeight="205.0" prefWidth="660.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Visualizar datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="136.0" prefWidth="660.0">
+                     <children>
+                        <TableView prefHeight="171.0" prefWidth="660.0">
+                          <columns>
+                            <TableColumn prefWidth="322.0" text="Nombre del participante" />
+                            <TableColumn minWidth="0.0" prefWidth="337.0" text="Asunto" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Registro de datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="23.0" text="Nombre del participlante:" />
+                        <TextField layoutX="150.0" layoutY="18.0" prefHeight="25.0" prefWidth="467.0" />
+                        <Label layoutX="16.0" layoutY="63.0" text="Asunto:" />
+                        <TextField layoutX="57.0" layoutY="59.0" prefHeight="25.0" prefWidth="371.0" />
+                        <Button layoutX="538.0" layoutY="113.0" mnemonicParsing="false" text="Registrar datos" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TabPane layoutX="33.0" layoutY="683.0" prefHeight="174.0" prefWidth="660.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Visualizar datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="164.0" prefWidth="660.0">
+                     <children>
+                        <TableView prefHeight="137.0" prefWidth="660.0">
+                          <columns>
+                            <TableColumn prefWidth="659.0" text="Nombre" />
+                            <TableColumn minWidth="0.0" prefWidth="0.0" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Registro de datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="35.0" text="Nombre asistieron:" />
+                        <Label layoutX="14.0" layoutY="83.0" text="Nombre no asistieron:" />
+                        <TextField layoutX="122.0" layoutY="31.0" prefHeight="25.0" prefWidth="481.0" />
+                        <TextField layoutX="137.0" layoutY="79.0" prefHeight="25.0" prefWidth="467.0" />
+                        <Button layoutX="534.0" layoutY="113.0" mnemonicParsing="false" text="Registrar datos" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="488.0" layoutY="877.0" mnemonicParsing="false" text="Enviar" />
+      <Button layoutX="574.0" layoutY="877.0" mnemonicParsing="false" text="Guardar" />
+   </children>
 </AnchorPane>

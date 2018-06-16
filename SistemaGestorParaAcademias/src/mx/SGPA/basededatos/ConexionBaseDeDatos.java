@@ -27,13 +27,13 @@ public class ConexionBaseDeDatos {
         }
     }
 
-    public static Connection getDataBaseConnection() {
+    public static Connection getConexionBaseDeDatos() {
         makeConnection();
         return ConexionBaseDeDatos.connection;
 
     }
 
-    public static void closeConnection() {
+    public static void cerrarConexion() {
         if (connection != null) {
             try {
                 if (!connection.isClosed()) {

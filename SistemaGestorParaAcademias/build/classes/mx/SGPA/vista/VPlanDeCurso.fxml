@@ -6,6 +6,157 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.SGPA.vista.VPlanDeCursoController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="1164.0" prefWidth="715.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="mx.SGPA.vista.VPlanDeCursoController">
+   <children>
+      <Label layoutX="234.0" layoutY="14.0" prefHeight="17.0" prefWidth="247.0" text="FACULTAD DE ESTADISTICA E INFORMATICA" />
+      <Label layoutX="313.0" layoutY="31.0" text="REGION XALAPA" />
+      <Label layoutX="262.0" layoutY="48.0" text="Formato: Plan de Curso (GA-D-F-01)" />
+      <Separator layoutX="34.0" layoutY="79.0" prefHeight="0.0" prefWidth="644.0" />
+      <Pane layoutX="36.0" layoutY="89.0" prefHeight="149.0" prefWidth="644.0">
+         <children>
+            <Label layoutX="176.0" layoutY="24.0" prefHeight="17.0" prefWidth="30.0" text="E.E.:" />
+            <Label layoutX="15.0" layoutY="24.0" text="Clave NRC:" />
+            <Label layoutX="413.0" layoutY="24.0" text="P.E.:" />
+            <Label layoutX="20.0" layoutY="64.0" text="BLOQUE:" />
+            <Label layoutX="165.0" layoutY="64.0" text="SECCION:" />
+            <Label layoutX="14.0" layoutY="109.0" text="ACADEMIACO:" />
+            <Label layoutX="316.0" layoutY="64.0" text="PERIODO:" />
+            <TextField layoutX="83.0" layoutY="20.0" prefHeight="25.0" prefWidth="78.0" />
+            <TextField layoutX="201.0" layoutY="20.0" prefHeight="25.0" prefWidth="202.0" />
+            <TextField layoutX="438.0" layoutY="20.0" prefHeight="25.0" prefWidth="192.0" />
+            <TextField layoutX="83.0" layoutY="60.0" prefHeight="25.0" prefWidth="78.0" />
+            <TextField layoutX="218.0" layoutY="60.0" prefHeight="25.0" prefWidth="78.0" />
+            <TextField layoutX="100.0" layoutY="105.0" prefHeight="25.0" prefWidth="428.0" />
+            <TextField layoutX="372.0" layoutY="60.0" prefHeight="25.0" prefWidth="260.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="34.0" layoutY="238.0" prefHeight="129.0" prefWidth="644.0">
+         <children>
+            <Separator layoutX="-12.0" layoutY="-1.0" prefHeight="0.0" prefWidth="644.0" />
+            <Label layoutX="5.0" layoutY="10.0" text="I.Objetivo General:" />
+            <TextField layoutX="14.0" layoutY="35.0" prefHeight="68.0" prefWidth="622.0" />
+            <Label layoutX="6.0" layoutY="113.0" text="II.Planeacion:" />
+         </children>
+      </Pane>
+      <TabPane layoutX="40.0" layoutY="377.0" prefHeight="227.0" prefWidth="636.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Visualizar datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="179.0" prefWidth="636.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Unidad" />
+                            <TableColumn prefWidth="179.0" text="Temas" />
+                              <TableColumn prefWidth="87.0" text="Fechas" />
+                              <TableColumn prefWidth="173.0" text="Tareas y practicas" />
+                              <TableColumn prefWidth="121.0" text="Tecnica didactica" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="7.0" layoutY="180.0" text="III.Bibliografia:" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Registro de datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Unidad:" />
+                        <TextField layoutX="58.0" layoutY="22.0" prefHeight="25.0" prefWidth="78.0" />
+                        <Label layoutX="145.0" layoutY="26.0" text="Temas:" />
+                        <TextField layoutX="186.0" layoutY="22.0" prefHeight="25.0" prefWidth="332.0" />
+                        <Label layoutX="14.0" layoutY="58.0" text="Fechas:" />
+                        <TextField layoutX="58.0" layoutY="54.0" prefHeight="25.0" prefWidth="78.0" />
+                        <Label layoutX="149.0" layoutY="58.0" text="Tarea y practicas:" />
+                        <TextField layoutX="242.0" layoutY="54.0" prefHeight="25.0" prefWidth="362.0" />
+                        <Label layoutX="15.0" layoutY="94.0" text="Tecnicas didacticas:" />
+                        <TextField layoutX="124.0" layoutY="90.0" prefHeight="25.0" prefWidth="428.0" />
+                        <Button layoutX="518.0" layoutY="126.0" mnemonicParsing="false" text="Ingresar datos" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TabPane layoutX="34.0" layoutY="620.0" prefHeight="227.0" prefWidth="636.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Visualizar datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="179.0" prefWidth="636.0">
+                           <columns>
+                              <TableColumn prefWidth="237.0" text="Autor(es) Apellido(S) Nombre(S)" />
+                              <TableColumn prefWidth="198.0" text="Titulo del libro" />
+                              <TableColumn prefWidth="98.0" text="Editorial" />
+                              <TableColumn prefWidth="102.0" text="Año" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="12.0" layoutY="181.0" text="III.Calendario de evaluacion:" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Registro de datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Nombre Autor:" />
+                        <TextField layoutX="97.0" layoutY="22.0" prefHeight="25.0" prefWidth="457.0" />
+                        <Label layoutX="21.0" layoutY="58.0" text="Titulo del libro:" />
+                        <TextField layoutX="112.0" layoutY="54.0" prefHeight="25.0" prefWidth="452.0" />
+                        <Label layoutX="15.0" layoutY="94.0" text="Editorial:" />
+                        <TextField layoutX="67.0" layoutY="90.0" prefHeight="25.0" prefWidth="152.0" />
+                        <Button layoutX="518.0" layoutY="126.0" mnemonicParsing="false" text="Ingresar datos" />
+                        <Label layoutX="229.0" layoutY="94.0" text="Año:" />
+                        <TextField layoutX="258.0" layoutY="90.0" prefHeight="25.0" prefWidth="152.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <TabPane layoutX="34.0" layoutY="864.0" prefHeight="227.0" prefWidth="636.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Visualizar datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="179.0" prefWidth="636.0">
+                           <columns>
+                              <TableColumn prefWidth="95.0" text="Unidad" />
+                              <TableColumn prefWidth="99.0" text="Fechas" />
+                              <TableColumn prefWidth="233.0" text="Criterio de Evaluacion" />
+                              <TableColumn prefWidth="106.0" text="Instrumento" />
+                              <TableColumn prefWidth="102.0" text="Porcentaje" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Registro de datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Nombre Autor:" />
+                        <TextField layoutX="97.0" layoutY="22.0" prefHeight="25.0" prefWidth="457.0" />
+                        <Label layoutX="21.0" layoutY="58.0" text="Titulo del libro:" />
+                        <TextField layoutX="112.0" layoutY="54.0" prefHeight="25.0" prefWidth="452.0" />
+                        <Label layoutX="15.0" layoutY="94.0" text="Editorial:" />
+                        <TextField layoutX="67.0" layoutY="90.0" prefHeight="25.0" prefWidth="152.0" />
+                        <Button layoutX="518.0" layoutY="126.0" mnemonicParsing="false" text="Ingresar datos" />
+                        <Label layoutX="229.0" layoutY="94.0" text="Año:" />
+                        <TextField layoutX="258.0" layoutY="90.0" prefHeight="25.0" prefWidth="152.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button layoutX="455.0" layoutY="1091.0" mnemonicParsing="false" text="Guardar" />
+      <Button layoutX="543.0" layoutY="1091.0" mnemonicParsing="false" text="Enviar" />
+   </children>
 </AnchorPane>

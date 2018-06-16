@@ -1,10 +1,7 @@
 
 package mx.SGPA.domain;
 
-/**
- *
- * @author Jasiel
- */
+
 public class AspectoAgenda {
     
     String nombreParticipante;

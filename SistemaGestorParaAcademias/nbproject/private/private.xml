@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/DAO/AvanceProgramaticoDAO.java</file>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/domain/Docente.java</file>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/DAO/DocenteDAO.java</file>
-            <file>file:/C:/Users/Kevin/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/DAO/PlanDeCursoDAO.java</file>
+            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/DAO/MinutaDAO.java</file>
+            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/DAO/AvanceProgramaticoDAO.java</file>
+            <file>file:/C:/Users/Jasiel/Documents/NetBeansProjects/SistemaGestorParaAcademias/src/mx/SGPA/basededatos/ConexionBaseDeDatos.java</file>
         </group>
     </open-files>
 </project-private>

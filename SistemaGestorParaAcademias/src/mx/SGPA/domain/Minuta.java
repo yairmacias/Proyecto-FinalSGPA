@@ -9,15 +9,20 @@ public class Minuta {
     private int periodo;
     private int fecha;
     private String lugar;
+    private TemasTratar temasTratar;
+    private AspectoAgenda aspectosAgenda;
+    private ConclucionesAcuerdos conclusionesAcuerdos;
+    private Participantes pasticipantes;
 
-    public Minuta(int idMinuta, String carrera, String academia, int hora, int periodo, int fecha) {
+    public Minuta(int idMinuta, String carrera, String academia, int hora, int periodo, int fecha, String lugar) {
 
-        this.idMinuta = idMinuta; 
+        this.idMinuta = idMinuta;
         this.carrera = carrera;
         this.academia = academia;
         this.hora = hora;
         this.periodo = periodo;
         this.fecha = fecha;
+        this.lugar = lugar;
     }
 
     public int getIdMinuta() {
@@ -44,6 +49,26 @@ public class Minuta {
         return fecha;
     }
 
+    public String getLugar() {
+        return lugar;
+    }
+
+    public TemasTratar getTemasTratar() {
+        return temasTratar;
+    }
+
+    public AspectoAgenda getAspectosAgenda() {
+        return aspectosAgenda;
+    }
+
+    public ConclucionesAcuerdos getConclusionesAcuerdos() {
+        return conclusionesAcuerdos;
+    }
+
+    public Participantes getPasticipantes() {
+        return pasticipantes;
+    }
+
     public void setMinuta(int idMinuta) {
         this.idMinuta = idMinuta;
     }
@@ -68,4 +93,23 @@ public class Minuta {
         this.fecha = fecha;
     }
 
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+    
+    public void setTemasTratar(TemasTratar temasTratar) {
+        this.temasTratar = temasTratar;
+    }
+
+    public void setAspectosAgenda(AspectoAgenda aspectosAgenda) {
+        this.aspectosAgenda = aspectosAgenda;
+    }
+
+    public void setConclusionesAcuerdos(ConclucionesAcuerdos conclusionesAcuerdos) {
+        this.conclusionesAcuerdos = conclusionesAcuerdos;
+    }
+
+    public void setPasticipantes(Participantes pasticipantes) {
+        this.pasticipantes = pasticipantes;
+    }
 }
